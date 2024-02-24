@@ -1,0 +1,8 @@
+.down {
+    padding-top: 20px;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+}
