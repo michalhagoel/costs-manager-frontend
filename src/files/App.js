@@ -1,7 +1,7 @@
 // Omer Sharoni, 206914384
 // Michal Hagoel, 318662830
 
-import '../styles/App.css';
+import '../styles/app.css';
 import AddProduct from './components/add_product';
 import Report from './components/report';
 

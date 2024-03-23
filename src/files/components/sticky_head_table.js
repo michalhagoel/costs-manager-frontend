@@ -2,7 +2,7 @@
 // Michal Hagoel, 318662830
 
 import { useState } from 'react';
-import '../../styles/Report.css';
+import '../../styles/report.css';
 import idb from '../../idb';
 import DeleteModal from '../modals/delete_modal';
 import EditModal from '../modals/edit_modal';

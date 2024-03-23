@@ -1,3 +1,6 @@
+// Omer Sharoni, 206914384
+// Michal Hagoel, 318662830
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';

@@ -14,7 +14,8 @@ const openCostsDB = (dbName = 'costs', dbVersion = 1) => {
     const request = indexedDB.open(dbName, dbVersion);
 
     request.onerror = (event) => {
-      reject(new errors.FailedToOpenDB("Error opening database: " + event.target.errorCode));
+      const errorMessage = "Error opening database: " + event.target.errorCode;
+      reject(new errors.FailedToOpenDB(errorMessage));
     };
 
     request.onupgradeneeded = (event) => {
@@ -54,7 +55,9 @@ const openCostsDB = (dbName = 'costs', dbVersion = 1) => {
           };
 
           request.onerror = (event) => {
-            reject(new errors.FailedToCreateItemInDB("Error adding cost: " + event.target.errorCode, {name, sum, category, description}));
+            const errorMessage = "Error adding cost: " + event.target.errorCode;
+            const options = {name, sum, category, description};
+            reject(new errors.FailedToCreateItemInDB(errorMessage, options));
           };
         });
       };
@@ -89,7 +92,8 @@ const openCostsDB = (dbName = 'costs', dbVersion = 1) => {
           };
 
           request.onerror = (event) => {
-            reject(new errors.FailedToGetReportDB("Error finding items: " + event.target.errorCode, year, month));
+            const errorMessage = "Error finding items: " + event.target.errorCode;
+            reject(new errors.FailedToGetReportDB(errorMessage, year, month));
           };
         });
       };
@@ -106,7 +110,8 @@ const openCostsDB = (dbName = 'costs', dbVersion = 1) => {
           };
 
           request.onerror = (event) => {
-            reject(new errors.FailedToDeleteItemInDB("Error deleting: " + event.target.errorCode, id));
+            const errorMessage = "Error deleting: " + event.target.errorCode;
+            reject(new errors.FailedToDeleteItemInDB(errorMessage, id));
           };
         });
       };
@@ -136,7 +141,8 @@ const openCostsDB = (dbName = 'costs', dbVersion = 1) => {
             };
   
             request.onerror = (event) => {
-              reject(new errors.FailedToEditItemInDB("Error deleting: " + event.target.errorCode, {newText, newSum}));
+              const errorMessage = "Error deleting: " + event.target.errorCode;
+              reject(new errors.FailedToEditItemInDB(errorMessage, {newText, newSum}));
             };
           };
 

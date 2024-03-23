@@ -36,7 +36,12 @@ export default function DeleteModal({header, text, id, refreshReport, deleteFunc
 
   return (
     <div>
-    <Button onClick={handleOpen} className='actionButton colorButton mr-1' variant="outlined"><DeleteIcon /></Button>
+    <Button
+      onClick={handleOpen}
+      className='actionButton colorButton mr-1'
+      variant="outlined">
+        <DeleteIcon />
+    </Button>
     <Modal
       aria-labelledby="transition-modal-title"
       aria-describedby="transition-modal-description"

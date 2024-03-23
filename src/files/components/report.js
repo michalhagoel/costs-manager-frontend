@@ -2,7 +2,7 @@
 // Michal Hagoel, 318662830
 
 import { useState } from 'react';
-import '../../styles/Report.css';
+import '../../styles/report.css';
 import idb from '../../idb';
 import errorHandler from '../utils/error_handle';
 import StickyHeadTable from './sticky_head_table';

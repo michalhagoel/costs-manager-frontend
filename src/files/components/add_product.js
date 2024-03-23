@@ -1,7 +1,7 @@
 // Omer Sharoni, 206914384
 // Michal Hagoel, 318662830
 
-import '../../styles/AddProduct.css';
+import '../../styles/add_product.css';
 import idb from '../../idb';
 import errorHandler from '../utils/error_handle';
 

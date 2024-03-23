@@ -88,7 +88,12 @@ export default function EditModal({ header, text, id, currentName, currentSum, r
 
   return (
     <div>
-      <Button onClick={handleOpen} className='actionButton colorButton mr-1' variant="outlined"><EditIcon /></Button>
+      <Button
+        onClick={handleOpen}
+        className='actionButton colorButton mr-1'
+        variant="outlined">
+        <EditIcon />
+      </Button>
       <Modal
         aria-labelledby="spring-modal-title"
         aria-describedby="spring-modal-description"
