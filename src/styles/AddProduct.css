@@ -1,15 +1,20 @@
+/*
+Omer Sharoni, 206914384
+Michal Hagoel, 318662830
+*/
+
 .input {
-    width: 150px;
-    height: 22px;
-    padding: 2px;
-    border: 1px solid;
-    border-radius: 5px;
+  width: 150px;
+  height: 22px;
+  padding: 2px;
+  border: 1px solid;
+  border-radius: 5px;
 }
 
 .dropdown {
-    width: 155.6px;
-    height: 27.6px;
-    padding: 2px;
-    border: 1px solid;
-    border-radius: 5px;
+  width: 155.6px;
+  height: 27.6px;
+  padding: 2px;
+  border: 1px solid;
+  border-radius: 5px;
 }

@@ -1,3 +1,33 @@
+/*
+Omer Sharoni, 206914384
+Michal Hagoel, 318662830
+*/
+
+hr.solid {
+  border-top: 3px solid #bbb;
+  margin-top: 20px;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -14,27 +44,15 @@
   margin-bottom: 10px;
 }
 
-label {
-  margin-right: 10px;
-  width: 150px; /* Adjust the width as needed */
+.m-t-16 {
+  margin-top: 16px;
 }
 
-input {
-  width: 150px; /* Adjust the width as needed */
-}
-
-select {
-  padding: 3px;
-  width: 150px; /* Adjust the width as needed */
-  height: 40px;
-  margin-right: 10px;
-}
-
-button {
+.error {
+  background-color: crimson;
   width: 120px;
   height: 40px;
   padding: 10px 20px;
-  background-color: #5b96df; /* Green background */
   color: white;
   border: none;
   border-radius: 4px;
@@ -42,9 +60,93 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #3c86e0; /* Darker green on hover */
+label {
+  margin-right: 10px;
+  width: 150px;
+  /* Adjust the width as needed */
 }
+
+input {
+  width: 150px;
+  /* Adjust the width as needed */
+}
+
+select {
+  padding: 3px;
+  width: 150px;
+  /* Adjust the width as needed */
+  height: 40px;
+  margin-right: 10px;
+}
+
+.button {
+  width: 120px;
+  height: 40px;
+  padding: 10px 20px;
+  background-color: #607D8B;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #3c86e0;
+  /* Darker green on hover */
+}
+
+.error:hover {
+  background-color: #cb153c;
+  /* Darker green on hover */
+}
+
+.colorButton {
+  color: #607D8B !important;
+}
+
+/* Styling the app */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #607D8B;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-section,
+.report-section {
+  background-color: #d2e2d0;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: #607D8B;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------- */
 
 .App {
   text-align: center;
@@ -73,13 +175,14 @@ button:hover {
 }
 
 .App-link {
-  color: #61dafb;
+  color: #607D8B;
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

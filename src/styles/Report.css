@@ -1,8 +1,33 @@
+/*
+Omer Sharoni, 206914384
+Michal Hagoel, 318662830
+*/
+
+.m-b-1 {
+  margin-bottom: 5px;
+}
+
+.p-t-20 {
+  padding-top: 20px;
+}
+
+.m-b-10 {
+  margin-bottom: 10px;
+}
+
+.m-t-10 {
+  margin-top: 10px;
+}
+
+.reportTable {
+  margin: auto;
+}
+
 .down {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .middle {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
